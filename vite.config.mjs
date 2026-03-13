@@ -24,11 +24,12 @@ htmlStringPlugin.enforce = 'post'
 export default defineConfig({
   root: '.',
   appType: 'mpa',
-  base: './',
+  base: '/svgedit/',
   server: {
     host: '0.0.0.0',
-    port: 8000,
-    strictPort: true
+    port: 2233,
+    strictPort: true,
+    allowedHosts: ['mindinlu.devcloud.woa.com']
   },
   preview: {
     host: '0.0.0.0',

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "d_b4246b7ba216",
+    "name": "CodeBuddy Logo",
+    "width": 500,
+    "height": 500,
+    "createdAt": "2026-03-11T08:41:26.633Z",
+    "updatedAt": "2026-03-11T08:42:11.488Z"
+  },
+  {
+    "id": "d_417ac9cd1024",
+    "name": "CodeBuddy Logo",
+    "width": 512,
+    "height": 512,
+    "createdAt": "2026-03-11T09:18:32.222Z",
+    "updatedAt": "2026-03-11T09:18:53.978Z"
+  },
+  {
+    "id": "d_e3159b18c14d",
+    "name": "MCP工具测试-三层架构图",
+    "width": 800,
+    "height": 600,
+    "createdAt": "2026-03-11T09:35:11.500Z",
+    "updatedAt": "2026-03-11T09:36:01.445Z"
+  },
+  {
+    "id": "d_346371307cf3",
+    "name": "MCP工具测试-逐元素添加",
+    "width": 600,
+    "height": 400,
+    "createdAt": "2026-03-11T09:36:08.965Z",
+    "updatedAt": "2026-03-11T09:36:08.965Z"
+  },
+  {
+    "id": "d_c8ae148bd5bc",
+    "name": "实时编辑工具测试",
+    "width": 800,
+    "height": 600,
+    "createdAt": "2026-03-11T09:37:34.579Z",
+    "updatedAt": "2026-03-11T09:38:52.832Z"
+  },
+  {
+    "id": "d_5aca5a90e057",
+    "name": "MCP全量测试v2",
+    "width": 1000,
+    "height": 800,
+    "createdAt": "2026-03-11T09:55:40.247Z",
+    "updatedAt": "2026-03-11T10:01:14.443Z"
+  },
+  {
+    "id": "d_100e37a12234",
+    "name": "渐变色图标",
+    "width": 600,
+    "height": 600,
+    "createdAt": "2026-03-11T11:26:24.053Z",
+    "updatedAt": "2026-03-11T11:42:02.655Z"
+  },
+  {
+    "id": "d_4ebee1f911de",
+    "name": "CodeBuddy Icon",
+    "width": 512,
+    "height": 512,
+    "createdAt": "2026-03-11T11:43:18.247Z",
+    "updatedAt": "2026-03-11T11:43:38.465Z"
+  },
+  {
+    "id": "d_7bf5ac2e9a08",
+    "name": "CodeBuddy Cat Icon",
+    "width": 500,
+    "height": 500,
+    "createdAt": "2026-03-11T11:45:43.747Z",
+    "updatedAt": "2026-03-11T12:00:31.233Z"
+  },
+  {
+    "id": "d_c91e56b1d4f3",
+    "name": "实时协作文档系统架构图",
+    "width": 1000,
+    "height": 700,
+    "createdAt": "2026-03-11T12:03:38.880Z",
+    "updatedAt": "2026-03-11T12:03:38.880Z"
+  },
+  {
+    "id": "d_c6ef369028ca",
+    "name": "实时协作文档系统架构图",
+    "width": 1200,
+    "height": 400,
+    "createdAt": "2026-03-11T12:17:21.385Z",
+    "updatedAt": "2026-03-11T12:23:35.758Z"
+  },
+  {
+    "id": "d_dc507b09e920",
+    "name": "文字功能测试",
+    "width": 800,
+    "height": 600,
+    "createdAt": "2026-03-11T12:30:05.655Z",
+    "updatedAt": "2026-03-11T12:30:59.763Z"
+  },
+  {
+    "id": "d_cfdf376e00b5",
+    "name": "SVGEdit项目架构流程图",
+    "width": 1200,
+    "height": 900,
+    "createdAt": "2026-03-11T12:53:50.321Z",
+    "updatedAt": "2026-03-11T13:12:03.403Z"
+  },
+  {
+    "id": "d_85591841de5e",
+    "name": "C86-4G Chiplet架构图",
+    "width": 1400,
+    "height": 820,
+    "createdAt": "2026-03-13T02:40:42.962Z",
+    "updatedAt": "2026-03-13T02:40:42.962Z"
+  },
+  {
+    "id": "d_c373e2891fd1",
+    "name": "C86-4G升级版Chiplet架构图",
+    "width": 1400,
+    "height": 900,
+    "createdAt": "2026-03-13T02:46:57.054Z",
+    "updatedAt": "2026-03-13T02:56:24.933Z"
+  }
+]

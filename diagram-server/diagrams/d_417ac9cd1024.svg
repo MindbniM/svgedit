@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <!-- 主背景渐变：紫色到青色 -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#6B3FA0"/>
+      <stop offset="40%" stop-color="#5B4FD9"/>
+      <stop offset="100%" stop-color="#00D4AA"/>
+    </linearGradient>
+    <!-- 猫耳/头部的渐变 -->
+    <linearGradient id="catGrad" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#7B52CC"/>
+      <stop offset="100%" stop-color="#3B7FE8"/>
+    </linearGradient>
+    <!-- 圆形裁剪 -->
+    <clipPath id="circleClip">
+      <circle cx="256" cy="256" r="230"/>
+    </clipPath>
+  </defs>
+
+  <!-- 圆形背景 -->
+  <circle cx="256" cy="256" r="230" fill="url(#bgGrad)"/>
+
+  <g clip-path="url(#circleClip)">
+    <!-- 白色猫咪形状（头部 + 耳朵） -->
+    <!-- 左耳 -->
+    <path d="M120,200 Q100,80 200,160 L180,220 Z" fill="white" opacity="0.95"/>
+    <!-- 右耳 -->
+    <path d="M392,200 Q412,80 312,160 L332,220 Z" fill="white" opacity="0.95"/>
+    <!-- 头部主体（白色弧形） -->
+    <path d="M100,220 Q120,140 200,160 Q256,100 312,160 Q392,140 412,220 Q420,300 380,340 Q340,380 256,380 Q172,380 132,340 Q92,300 100,220 Z" fill="white" opacity="0.95"/>
+
+    <!-- 紫蓝渐变的脸部（插头面罩） -->
+    <path d="M120,260 Q130,210 200,230 Q256,200 312,230 Q382,210 392,260 Q400,340 370,380 Q340,420 256,440 Q172,420 142,380 Q112,340 120,260 Z" fill="url(#catGrad)"/>
+
+    <!-- 左眼（白色圆角矩形 - 插头孔） -->
+    <rect x="185" y="300" width="28" height="55" rx="14" ry="14" fill="white"/>
+    <!-- 右眼（白色圆角矩形 - 插头孔） -->
+    <rect x="299" y="300" width="28" height="55" rx="14" ry="14" fill="white"/>
+  </g>
+</svg>

@@ -32,9 +32,9 @@ export default class ConfigObj {
     this.defaultPrefs = {
       // EDITOR OPTIONS (DIALOG)
       /**
-        * Default to "en" if locale.js detection does not detect another language.
+        * Default to "zh-CN" (Simplified Chinese). Change to "en" for English.
         */
-      lang: 'en',
+      lang: 'zh-CN',
       /**
         * Will default to 's' if the window height is smaller than the minimum
         * height and 'm' otherwise.
@@ -194,7 +194,8 @@ export default class ConfigObj {
       'ext-polystar',
       'ext-storage',
       'ext-opensave',
-      'ext-layer_view'
+      'ext-layer_view',
+      'ext-remote-bridge'
     ]
     this.curConfig = {
       // We do not put on defaultConfig to simplify object copying
@@ -372,6 +373,9 @@ export default class ConfigObj {
         this.defaultPrefs[key] = result ? decodeURIComponent(result[1]) : ''
       }
     })
+    
+    // Force Chinese language regardless of stored preferences
+    this.defaultPrefs.lang = 'zh-CN'
   }
 
   /**

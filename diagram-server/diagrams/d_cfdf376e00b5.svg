@@ -1,0 +1,146 @@
+<svg width="1200" height="920" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient id="bg-grad" x1="0" x2="1" y1="0" y2="1">
+   <stop offset="0%" stop-color="#f0f4ff"/>
+   <stop offset="50%" stop-color="#fafbff"/>
+   <stop offset="100%" stop-color="#f5f0ff"/>
+  </linearGradient>
+  <linearGradient id="header-blue" x1="0" x2="1" y1="0" y2="0">
+   <stop offset="0%" stop-color="#3B82F6"/>
+   <stop offset="100%" stop-color="#6366F1"/>
+  </linearGradient>
+  <linearGradient id="header-green" x1="0" x2="1" y1="0" y2="0">
+   <stop offset="0%" stop-color="#059669"/>
+   <stop offset="100%" stop-color="#10B981"/>
+  </linearGradient>
+  <linearGradient id="header-amber" x1="0" x2="1" y1="0" y2="0">
+   <stop offset="0%" stop-color="#D97706"/>
+   <stop offset="100%" stop-color="#F59E0B"/>
+  </linearGradient>
+  <linearGradient id="title-grad" x1="0" x2="1" y1="0" y2="0">
+   <stop offset="0%" stop-color="#1e293b"/>
+   <stop offset="100%" stop-color="#334155"/>
+  </linearGradient>
+  <filter height="120%" id="card-shadow" width="115%" x="-5%" y="-5%"/>
+  <filter height="112%" id="card-shadow-sm" width="108%" x="-3%" y="-3%"/>
+  <marker id="arrow-blue" markerHeight="8" markerWidth="12" orient="auto" refX="11" refY="4">
+   <path d="m0,0.5l10,3.5l-10,3.5" fill="none" id="svg_1" stroke="#3B82F6" stroke-linejoin="round" stroke-width="1.5"/>
+  </marker>
+  <marker id="arrow-green" markerHeight="8" markerWidth="12" orient="auto" refX="11" refY="4">
+   <path d="m0,0.5l10,3.5l-10,3.5" fill="none" id="svg_2" stroke="#10B981" stroke-linejoin="round" stroke-width="1.5"/>
+  </marker>
+  <marker id="arrow-amber" markerHeight="8" markerWidth="12" orient="auto" refX="11" refY="4">
+   <path d="m0,0.5l10,3.5l-10,3.5" fill="none" id="svg_3" stroke="#D97706" stroke-linejoin="round" stroke-width="1.5"/>
+  </marker>
+  <marker id="arrow-orange" markerHeight="7" markerWidth="10" orient="auto" refX="9" refY="3.5">
+   <path d="m0,0.5l8,3l-8,3" fill="none" id="svg_4" stroke="#D97706" stroke-linejoin="round" stroke-width="1.2"/>
+  </marker>
+ </defs>
+ <g class="layer">
+  <title>Layer 1</title>
+  <rect fill="url(#bg-grad)" height="920" id="svg_5" width="1200" x="0" y="0"/>
+  <rect fill="white" fill-opacity="0.7" filter="url(#card-shadow-sm)" height="70" id="svg_6" rx="20" width="1140" x="30" y="18"/>
+  <text fill="url(#title-grad)" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="26" font-weight="bold" id="svg_7" letter-spacing="1" text-anchor="middle" x="600" y="50">SVGEdit MCP 图表编辑系统 · 架构流程图</text>
+  <text fill="#94a3b8" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="13" id="svg_8" letter-spacing="0.5" text-anchor="middle" x="600" y="74">AI 通过 MCP 协议驱动 SVGEdit 浏览器编辑器实时绘制 SVG 图表</text>
+  <rect fill="white" filter="url(#card-shadow)" height="175" id="svg_9" rx="18" stroke="#DBEAFE" stroke-width="1.5" width="280" x="50" y="110"/>
+  <rect fill="url(#header-blue)" height="44" id="svg_10" rx="18" width="280" x="50" y="110"/>
+  <path d="m50,128l0,0" fill="none" id="svg_11"/>
+  <circle cx="78" cy="132" fill="white" fill-opacity="0.25" id="svg_12" r="14"/>
+  <text fill="white" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="14" id="svg_13" text-anchor="middle" x="78" y="137">🤖</text>
+  <text fill="white" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="14" font-weight="bold" id="svg_14" text-anchor="middle" x="200" y="138">AI 客户端 (CodeBuddy)</text>
+  <text fill="#475569" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="12.5" id="svg_15" text-anchor="middle" x="190" y="180">• 理解用户绘图意图</text>
+  <text fill="#475569" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="12.5" id="svg_16" text-anchor="middle" x="190" y="200">• 调用 MCP 工具集</text>
+  <text fill="#475569" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="12.5" id="svg_17" text-anchor="middle" x="190" y="220">• 生成 SVG 元素指令</text>
+  <rect fill="#EFF6FF" height="26" id="svg_18" rx="13" stroke="#BFDBFE" width="160" x="110" y="240"/>
+  <text fill="#3B82F6" font-family="&#x27;Segoe UI Semibold&#x27;, Arial, sans-serif" font-size="11" font-weight="600" id="svg_19" text-anchor="middle" x="190" y="258">mcp_call_tool()</text>
+  <rect fill="white" filter="url(#card-shadow)" height="175" id="svg_20" rx="18" stroke="#D1FAE5" stroke-width="1.5" width="280" x="460" y="110"/>
+  <rect fill="url(#header-green)" height="44" id="svg_21" rx="18" width="280" x="460" y="110"/>
+  <circle cx="488" cy="132" fill="white" fill-opacity="0.25" id="svg_22" r="14"/>
+  <text fill="white" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="14" id="svg_23" text-anchor="middle" x="488" y="137">⚡</text>
+  <text fill="white" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="14" font-weight="bold" id="svg_24" text-anchor="middle" x="610" y="138">MCP Server</text>
+  <text fill="#475569" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="12.5" id="svg_25" text-anchor="middle" x="600" y="180">• 暴露 50+ 绘图工具</text>
+  <text fill="#475569" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="12.5" id="svg_26" text-anchor="middle" x="600" y="200">• HTTP API 管理图表</text>
+  <text fill="#475569" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="12.5" id="svg_27" text-anchor="middle" x="600" y="220">• WebSocket 实时编辑</text>
+  <rect fill="#F0FDF4" height="26" id="svg_28" rx="13" stroke="#BBF7D0" width="180" x="510" y="240"/>
+  <text fill="#059669" font-family="&#x27;Segoe UI Semibold&#x27;, Arial, sans-serif" font-size="11" font-weight="600" id="svg_29" text-anchor="middle" x="600" y="258">Streamable HTTP MCP</text>
+  <rect fill="white" filter="url(#card-shadow)" height="175" id="svg_30" rx="18" stroke="#FDE68A" stroke-width="1.5" width="280" x="870" y="110"/>
+  <rect fill="url(#header-amber)" height="44" id="svg_31" rx="18" transform="matrix(1 0 0 1 0 0)" width="280" x="870" y="110"/>
+  <circle cx="898" cy="132" fill="white" fill-opacity="0.25" id="svg_32" r="14"/>
+  <text fill="white" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="14" id="svg_33" text-anchor="middle" x="898" y="137">🗄️</text>
+  <text fill="white" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="14" font-weight="bold" id="svg_34" text-anchor="middle" x="1020" y="138">Diagram Server</text>
+  <text fill="#475569" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="12.5" id="svg_35" text-anchor="middle" x="1010" y="180">• SVG 文件存储</text>
+  <text fill="#475569" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="12.5" id="svg_36" text-anchor="middle" x="1010" y="200">• REST API 增删改查</text>
+  <text fill="#475569" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="12.5" id="svg_37" text-anchor="middle" x="1010" y="220">• WebSocket 中继服务</text>
+  <rect fill="#FFFBEB" height="26" id="svg_38" rx="13" stroke="#FDE68A" width="180" x="920" y="240"/>
+  <text fill="#B45309" font-family="&#x27;Segoe UI Semibold&#x27;, Arial, sans-serif" font-size="11" font-weight="600" id="svg_39" text-anchor="middle" x="1010" y="258">Express + WS Server</text>
+  <path d="m330,195c50,0 80,0 128,0" fill="none" id="svg_40" marker-end="url(#arrow-blue)" stroke="#3B82F6" stroke-width="2"/>
+  <rect fill="white" height="20" id="svg_41" rx="10" stroke="#DBEAFE" width="65" x="365" y="178"/>
+  <text fill="#3B82F6" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="10" font-weight="600" id="svg_42" text-anchor="middle" x="397" y="193">MCP</text>
+  <path d="m740,195c50,0 80,0 128,0" fill="none" id="svg_43" marker-end="url(#arrow-green)" stroke="#10B981" stroke-width="2"/>
+  <rect fill="white" height="20" id="svg_44" rx="10" stroke="#D1FAE5" width="70" x="770" y="178"/>
+  <text fill="#059669" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="10" font-weight="600" id="svg_45" text-anchor="middle" x="805" y="193">HTTP/WS</text>
+  <rect fill="white" filter="url(#card-shadow)" height="220" id="svg_46" rx="20" stroke="#FDE68A" stroke-width="1.5" width="1100" x="50" y="320"/>
+  <rect fill="linear-gradient(90deg, #FFFBEB, #FEF3C7)" height="44" id="svg_47" rx="20" width="1100" x="50" y="320"/>
+  <rect fill="#FFFBEB" height="44" id="svg_48" rx="20" width="1100" x="50" y="320"/>
+  <line id="svg_49" stroke="#FDE68A" x1="50" x2="1150" y1="363" y2="363"/>
+  <text fill="#92400E" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="15" font-weight="bold" id="svg_50" x="110" y="348">🌐  浏览器端 SVGEdit 编辑器</text>
+  <rect fill="#FFFBEB" filter="url(#card-shadow-sm)" height="130" id="svg_51" rx="14" stroke="#FCD34D" stroke-width="1.2" width="220" x="80" y="385"/>
+  <rect fill="#FCD34D" fill-opacity="0.4" height="32" id="svg_52" rx="14" width="220" x="80" y="385"/>
+  <text fill="#78350F" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="13" font-weight="bold" id="svg_53" text-anchor="middle" x="190" y="407">SvgCanvas 引擎</text>
+  <text fill="#78716C" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="11.5" id="svg_54" text-anchor="middle" x="190" y="440">addSVGElementsFromJson()</text>
+  <text fill="#78716C" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="11.5" id="svg_55" text-anchor="middle" x="190" y="460">setSvgString()</text>
+  <text fill="#78716C" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="11.5" id="svg_56" text-anchor="middle" x="190" y="480">getSvgString()</text>
+  <text fill="#78716C" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="11.5" id="svg_57" text-anchor="middle" x="190" y="500">importSvgString()</text>
+  <rect fill="#EFF6FF" filter="url(#card-shadow-sm)" height="130" id="svg_58" rx="14" stroke="#93C5FD" stroke-width="1.2" width="220" x="330" y="385"/>
+  <rect fill="#93C5FD" fill-opacity="0.4" height="32" id="svg_59" rx="14" width="220" x="330" y="385"/>
+  <text fill="#1E3A5F" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="13" font-weight="bold" id="svg_60" text-anchor="middle" x="440" y="407">Remote Bridge</text>
+  <text fill="#78716C" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="11.5" id="svg_61" text-anchor="middle" x="440" y="440">WebSocket 客户端</text>
+  <text fill="#78716C" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="11.5" id="svg_62" text-anchor="middle" x="440" y="460">接收 JSON-RPC 命令</text>
+  <text fill="#78716C" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="11.5" id="svg_63" text-anchor="middle" x="440" y="480">调用 Canvas API</text>
+  <text fill="#78716C" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="11.5" id="svg_64" text-anchor="middle" x="440" y="500">返回执行结果</text>
+  <rect fill="#F0FDF4" filter="url(#card-shadow-sm)" height="130" id="svg_65" rx="14" stroke="#86EFAC" stroke-width="1.2" width="220" x="580" y="385"/>
+  <rect fill="#86EFAC" fill-opacity="0.4" height="32" id="svg_66" rx="14" width="220" x="580" y="385"/>
+  <text fill="#14532D" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="13" font-weight="bold" id="svg_67" text-anchor="middle" x="690" y="407">Editor UI</text>
+  <text fill="#78716C" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="11.5" id="svg_68" text-anchor="middle" x="690" y="440">工具栏 / 侧面板</text>
+  <text fill="#78716C" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="11.5" id="svg_69" text-anchor="middle" x="690" y="460">图层管理器</text>
+  <text fill="#78716C" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="11.5" id="svg_70" text-anchor="middle" x="690" y="480">属性编辑器</text>
+  <text fill="#78716C" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="11.5" id="svg_71" text-anchor="middle" x="690" y="500">撤销/重做历史</text>
+  <rect fill="#FDF2F8" filter="url(#card-shadow-sm)" height="130" id="svg_72" rx="14" stroke="#F9A8D4" stroke-width="1.2" width="290" x="830" y="385"/>
+  <rect fill="#F9A8D4" fill-opacity="0.4" height="32" id="svg_73" rx="14" width="290" x="830" y="385"/>
+  <text fill="#831843" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="13" font-weight="bold" id="svg_74" text-anchor="middle" x="975" y="407">Core 模块</text>
+  <text fill="#78716C" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="11.5" id="svg_75" text-anchor="middle" x="975" y="440">json.js · event.js · draw.js</text>
+  <text fill="#78716C" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="11.5" id="svg_76" text-anchor="middle" x="975" y="460">history.js · svg-exec.js</text>
+  <text fill="#78716C" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="11.5" id="svg_77" text-anchor="middle" x="975" y="480">selected-elem.js · utilities.js</text>
+  <text fill="#78716C" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="11.5" id="svg_78" text-anchor="middle" x="975" y="500">path.js · recalculate.js</text>
+  <path d="m300,450l28,0" fill="none" id="svg_79" marker-end="url(#arrow-orange)" stroke="#D97706" stroke-width="1.5"/>
+  <path d="m550,450l28,0" fill="none" id="svg_80" marker-end="url(#arrow-orange)" stroke="#D97706" stroke-width="1.5"/>
+  <path d="m800,450l28,0" fill="none" id="svg_81" marker-end="url(#arrow-orange)" stroke="#D97706" stroke-width="1.5"/>
+  <path d="m1010,285q0,25 -410,55q-160,10 -160,43" fill="none" id="svg_82" marker-end="url(#arrow-amber)" stroke="#D97706" stroke-dasharray="6,4" stroke-width="1.8"/>
+  <text fill="#B45309" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="10.5" font-weight="600" id="svg_83" text-anchor="middle" x="780" y="318">WebSocket 实时通信</text>
+  <rect fill="white" filter="url(#card-shadow)" height="155" id="svg_84" rx="18" stroke="#C4B5FD" stroke-width="1.5" width="350" x="50" y="580"/>
+  <rect fill="#8B5CF6" height="40" id="svg_85" rx="18" width="350" x="50" y="580"/>
+  <text fill="white" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="14" font-weight="bold" id="svg_86" text-anchor="middle" x="225" y="606">📋  工作流程</text>
+  <text fill="#4C1D95" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="12.5" id="svg_87" x="75" y="645">❶ 用户描述 → AI 理解绘图意图</text>
+  <text fill="#4C1D95" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="12.5" id="svg_88" x="75" y="670">❷ AI 调用 MCP 工具 (create/add/set)</text>
+  <text fill="#4C1D95" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="12.5" id="svg_89" x="75" y="695">❸ MCP → WebSocket → 编辑器渲染</text>
+  <text fill="#4C1D95" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="12.5" id="svg_90" x="75" y="720">❹ 用户在浏览器中查看实时效果</text>
+  <rect fill="white" filter="url(#card-shadow)" height="155" id="svg_91" rx="18" stroke="#FBCFE8" stroke-width="1.5" width="350" x="425" y="580"/>
+  <rect fill="#EC4899" height="40" id="svg_92" rx="18" width="350" x="425" y="580"/>
+  <text fill="white" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="14" font-weight="bold" id="svg_93" text-anchor="middle" x="600" y="606">🎨  MCP 工具分类 (50+)</text>
+  <text fill="#831843" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="12.5" id="svg_94" x="445" y="645">📦  图表管理  create / list / get / delete</text>
+  <text fill="#831843" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="12.5" id="svg_95" x="445" y="670">✏️  元素操作  add / update / move / delete</text>
+  <text fill="#831843" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="12.5" id="svg_96" x="445" y="695">🎨  样式文字  color / font / stroke / opacity</text>
+  <text fill="#831843" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="12.5" id="svg_97" x="445" y="720">📐  图层画布  layer / resolution / zoom</text>
+  <rect fill="white" filter="url(#card-shadow)" height="155" id="svg_98" rx="18" stroke="#BAE6FD" stroke-width="1.5" width="350" x="800" y="580"/>
+  <rect fill="#0EA5E9" height="40" id="svg_99" rx="18" width="350" x="800" y="580"/>
+  <text fill="white" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="14" font-weight="bold" id="svg_100" text-anchor="middle" x="975" y="606">🔧  技术栈</text>
+  <text fill="#075985" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="12.5" id="svg_101" x="820" y="645">⚙️  MCP SDK  @modelcontextprotocol/sdk</text>
+  <text fill="#075985" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="12.5" id="svg_102" x="820" y="670">🌐  Express + WebSocket (ws)</text>
+  <text fill="#075985" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="12.5" id="svg_103" x="820" y="695">🖼️  SVGEdit  @svgedit/svgcanvas</text>
+  <text fill="#075985" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="12.5" id="svg_104" x="820" y="720">📡  Streamable HTTP Transport</text>
+  <rect fill="white" filter="url(#card-shadow-sm)" height="50" id="svg_105" rx="25" stroke="#E2E8F0" width="1100" x="50" y="770"/>
+  <text fill="#94a3b8" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="12" id="svg_106" letter-spacing="0.5" text-anchor="middle" x="600" y="801">📂  png_to_svg/svgedit/  ·  mcp-server.js  ·  remote-bridge/  ·  packages/svgcanvas/  ·  diagram-server/</text>
+  <rect fill="white" fill-opacity="0.5" height="50" id="svg_107" rx="25" width="1100" x="50" y="845"/>
+  <text fill="#cbd5e1" font-family="&#x27;Segoe UI&#x27;, Arial, sans-serif" font-size="11" id="svg_108" text-anchor="middle" x="600" y="876">Built with ❤️ by CodeBuddy × SVGEdit MCP</text>
+ </g>
+</svg>

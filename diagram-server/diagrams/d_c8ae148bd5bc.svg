@@ -1,0 +1,14 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created by SVGEdit Diagram Server -->
+ <g class="layer">
+  <title>Layer 1</title>
+  <rect fill="#2C3E50" height="60" id="svg_1" rx="12" ry="12" stroke="#1A252F" stroke-width="2" width="400" x="200" y="30"/>
+  <text fill="#FFFFFF" font-family="Arial" font-size="24" font-weight="bold" id="svg_2" text-anchor="middle" x="400" y="68"/>
+  <circle cx="200" cy="200" fill="#9B59B6" id="svg_3" opacity="0.9" r="75" stroke="#8E44AD" stroke-width="2"/>
+  <ellipse cx="400" cy="200" fill="#2ECC71" id="svg_4" rx="80" ry="50" stroke="#27AE60" stroke-width="2"/>
+  <rect fill="#1ABC9C" height="90" id="svg_5" rx="8" ry="8" stroke="#16A085" stroke-width="2" width="140" x="540" y="160"/>
+  <text fill="#FFFFFF" font-family="Arial" font-size="16" id="svg_6" text-anchor="middle" x="200" y="205"/>
+  <text fill="#FFFFFF" font-family="Arial" font-size="16" id="svg_7" text-anchor="middle" x="400" y="205"/>
+  <text fill="#FFFFFF" font-family="Arial" font-size="16" id="svg_8" text-anchor="middle" x="600" y="205"/>
+ </g>
+</svg>

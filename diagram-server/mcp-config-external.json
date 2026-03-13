@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "svgedit-diagram": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "./mcp-server.js"
+      ],
+      "env": {
+        "DIAGRAM_SERVER_URL": "http://21.6.205.60/svgedit/mcp",
+        "DIAGRAM_WS_URL": "ws://21.6.205.60/svgedit/mcp/ws"
+      },
+      "timeout": 60
+    }
+  }
+}

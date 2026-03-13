@@ -1,0 +1,15 @@
+<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+ <g class="layer">
+  <title>Layer 1</title>
+
+  <circle cx="300" cy="300" fill="url(#mainGradient)" id="svg_2" r="280"/>
+  <path d="m40,250q-15,-50 0,-100q15,-50 70,-80q55,-30 120,-20q65,10 120,50q55,40 90,100q35,60 45,130q10,70 -15,130l-90,20q-40,20 -90,10q-50,-10 -100,-45q-50,-35 -85,-85q-35,-50 -55,-100l-10,-10z" fill="#E8E8EA" id="svg_3" opacity="0.95"/>
+  <ellipse cx="460" cy="180" fill="#E8E8EA" id="svg_4" opacity="0.95" rx="90" ry="110" transform="rotate(-18 460 180)"/>
+  <path d="m200,350q20,-30 60,-40q40,-10 90,0q50,10 90,40q40,30 60,80q20,50 10,100q-25,20 -60,30q-50,10 -110,5q-60,-5 -110,-25q-50,-20 -80,-60q-10,-30 0,-70q15,-40 50,-60z" fill="url(#lowerGradient)" id="svg_5" opacity="0.95"/>
+  <ellipse cx="240" cy="405" fill="white" id="svg_6" rx="42" ry="68" transform="rotate(-5 240 405)"/>
+  <ellipse cx="410" cy="385" fill="white" id="svg_7" rx="42" ry="68" transform="rotate(8 410 385)"/>
+  <ellipse cx="90" cy="220" fill="#F0F0F2" id="svg_8" opacity="0.9" rx="35" ry="45" transform="rotate(-25 90 220)"/>
+  <path d="m280,200q40,-10 80,0q40,10 70,40q20,30 10,70q-10,30 -40,50q-30,15 -70,20q-40,5 -80,-10q-30,-15 -50,-45q-15,-35 -5,-75q15,-35 50,-50l35,0z" fill="#ECECEE" id="svg_9" opacity="0.85"/>
+ </g>
+</svg>

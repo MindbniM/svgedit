@@ -1,0 +1,9 @@
+<svg width="1200" height="900" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+ <g class="layer">
+  <title>Layer 1</title>
+  <path d="m700,420c0,-10.87 9.13,-20 20,-20l110,0c10.87,0 20,9.13 20,20l0,60c0,10.87 -9.13,20 -20,20l-110,0c-10.87,0 -20,-9.13 -20,-20l0,-60z" fill="#E74C3C" id="svg_2" opacity="0.5"/>
+  <rect fill="#E74C3C" height="100" id="svg_1" transform="matrix(1 0 0 1 0 0)" width="150" x="500" y="400"/>
+  <image height="120" href="https://via.placeholder.com/120/3498DB/ffffff?text=MCP" id="svg_4" width="120" x="100" y="400"/>
+ </g>
+</svg>
