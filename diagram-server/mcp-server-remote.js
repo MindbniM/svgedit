@@ -200,7 +200,7 @@ async function loadToolDefinitions (wsClient) {
     // ===== 第一层：Diagram 管理 =====
     {
       name: 'create_diagram',
-      description: '创建一个新的 SVG 图表。返回唯一标识符 diagram_id 和编辑器 URL。后续所有操作都通过这个 diagram_id 来标识目标图表。用户可以通过编辑器 URL 在浏览器中手动编辑该图表。',
+      description: '创建一个新的 SVG 图表。返回唯一标识符 diagram_id 和编辑器 URL。后续所有操作都通过这个 diagram_id 来标识目标图表。用户可以通过编辑器 URL 在浏览器中手动编辑该图表。如果你可以打开这个编辑器URL, 请直接打开，如果不能，请让用户打开后，你再执行其他工具',
       inputSchema: {
         type: 'object',
         properties: {
@@ -969,7 +969,7 @@ async function loadToolDefinitions (wsClient) {
     },
     {
       name: 'editor_save',
-      description: '将编辑器中当前画布的内容保存到后端存储。需要编辑器在线。',
+      description: '将编辑器中当前画布的内容保存到后端存储，并返回 SVG 内容给调用者。用于持久化编辑结果并导出 SVG。需要编辑器在线。',
       inputSchema: {
         type: 'object',
         properties: { diagram_id: { type: 'string', description: '图表唯一标识符' } },
@@ -1344,7 +1344,7 @@ async function loadToolDefinitions (wsClient) {
           }
           const saveResult = await apiRequest('PUT', `/api/diagrams/${args.diagram_id}`, { svgContent: svgResult })
           if (saveResult.error) return { content: [{ type: 'text', text: `保存失败: ${saveResult.error}` }], isError: true }
-          return { content: [{ type: 'text', text: JSON.stringify({ success: true, diagram_id: args.diagram_id, updatedAt: saveResult.updatedAt, message: '编辑器内容已保存到后端' }, null, 2) }] }
+          return { content: [{ type: 'text', text: JSON.stringify({ success: true, diagram_id: args.diagram_id, updatedAt: saveResult.updatedAt, svgContent: svgResult, message: '编辑器内容已保存到后端，并返回 SVG 内容' }, null, 2) }] }
         }
         case 'export_diagram_svg': {
           const result = await apiRequest('GET', `/api/diagrams/${args.diagram_id}`)

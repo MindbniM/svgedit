@@ -7,6 +7,31 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/SVG-Edit/svgedit/badge.svg)](https://snyk.io/test/github/SVG-Edit/svgedit)
 [![CodeQL](https://github.com/SVG-Edit/svgedit/actions/workflows/codeql.yml/badge.svg)](https://github.com/SVG-Edit/svgedit/actions/workflows/codeql.yml)
 
+> **📢 Extended with Remote Bridge & Diagram Server**  
+> This fork includes WebSocket remote control API and diagram management features.  
+> See [STARTUP.md](./STARTUP.md) for quick start guide.
+
+## 🚀 Quick Start
+
+```bash
+# 1. Clone and install
+git clone <this-repo>
+cd svgedit
+npm install
+
+# 2. Configure environment (optional)
+cp .env.example .env
+vim .env  # Edit your configuration
+
+# 3. Start services
+npm run start
+```
+
+For detailed configuration, see:
+- [CONFIGURATION.md](./CONFIGURATION.md) - Environment variables and deployment
+- [STARTUP.md](./STARTUP.md) - Complete startup guide
+- [MCP-QUICK-START.md](./MCP-QUICK-START.md) - MCP integration guide
+
 
 
 **SVGEdit** is a fast, web-based, JavaScript-driven SVG drawing editor that

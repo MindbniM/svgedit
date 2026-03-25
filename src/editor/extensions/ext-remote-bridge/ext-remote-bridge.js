@@ -154,14 +154,21 @@ export default {
           reconnectTimer = null
         }
 
-        // 如果有 diagramId，从 API 加载 SVG 内容
-        if (diagramId) {
-          loadDiagramFromApi(diagramId)
+        // 只在首次连接时加载 SVG 内容，避免重连时覆盖未保存的编辑
+        // 使用标记防止重复加载
+        if (!window.__svgedit_diagram_loaded) {
+          if (diagramId) {
+            loadDiagramFromApi(diagramId)
+            window.__svgedit_diagram_loaded = true
+          } else {
+            // 没有 diagramId 时，清空画布显示空白画板
+            // 避免加载 localStorage 中的旧内容
+            svgCanvas.clear()
+            console.log('[remote-bridge] No diagram ID provided, starting with blank canvas')
+            window.__svgedit_diagram_loaded = true
+          }
         } else {
-          // 没有 diagramId 时，清空画布显示空白画板
-          // 避免加载 localStorage 中的旧内容
-          svgCanvas.clear()
-          console.log('[remote-bridge] No diagram ID provided, starting with blank canvas')
+          console.log('[remote-bridge] Diagram already loaded, skipping reload to preserve unsaved changes')
         }
       }
 

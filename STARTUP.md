@@ -481,7 +481,7 @@ Restart=always
 RestartSec=5
 
 Environment=DIAGRAM_PORT=2333
-Environment=EDITOR_BASE_URL=http://21.6.205.60/svgedit/src/editor/index.html
+Environment=EDITOR_BASE_URL=http://your-domain.com/svgedit/src/editor/index.html
 Environment=NODE_ENV=production
 
 StandardOutput=journal
@@ -593,8 +593,8 @@ location /svgedit/ {
 
 ```bash
 # 1. 安装依赖
-cd /data/home/mindinlu/png_to_svg/svgedit && npm install
-cd /data/home/mindinlu/png_to_svg/svgedit/diagram-server && npm install
+cd /path/to/svgedit && npm install
+cd /path/to/svgedit/diagram-server && npm install
 
 # 2. 将 systemd 服务文件写入（参考 9.2 节内容）
 sudo vim /etc/systemd/system/diagram-server.service

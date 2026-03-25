@@ -7,8 +7,8 @@
         "./mcp-server.js"
       ],
       "env": {
-        "DIAGRAM_SERVER_URL": "http://21.6.205.60/svgedit/mcp",
-        "DIAGRAM_WS_URL": "ws://21.6.205.60/svgedit/mcp/ws"
+        "DIAGRAM_SERVER_URL": "http://your-domain.com/svgedit/mcp",
+        "DIAGRAM_WS_URL": "ws://your-domain.com/svgedit/mcp/ws"
       },
       "timeout": 60
     }

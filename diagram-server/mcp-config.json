@@ -4,8 +4,8 @@
       "command": "node",
       "args": ["/data/home/mindinlu/png_to_svg/svgedit/diagram-server/mcp-server.js"],
       "env": {
-        "DIAGRAM_SERVER_URL": "http://mindinlu.devcloud.woa.com/svgedit/mcp",
-        "DIAGRAM_WS_URL": "ws://mindinlu.devcloud.woa.com/svgedit/mcp/ws"
+        "DIAGRAM_SERVER_URL": "http://localhost:2333",
+        "DIAGRAM_WS_URL": "ws://localhost:2333/ws"
       }
     }
   }

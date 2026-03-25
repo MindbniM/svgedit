@@ -29,13 +29,16 @@ import WebSocket from 'ws'
 
 export class SvgRemoteClient {
   /**
-   * @param {string} [url='ws://localhost:9527'] WebSocket 服务端地址
+   * @param {string} [url] WebSocket 服务端地址 (默认: ws://localhost:{BRIDGE_PORT})
    * @param {object} [options]
    * @param {number} [options.timeout=10000] 请求超时毫秒
    * @param {boolean} [options.autoReconnect=true] 是否自动重连
    */
-  constructor (url = 'ws://localhost:9527', options = {}) {
-    this.url = url
+  constructor (url, options = {}) {
+    // 默认端口从环境变量读取，开发环境默认 9527
+    const defaultPort = process.env.BRIDGE_PORT || '9527'
+    const defaultUrl = `ws://localhost:${defaultPort}`
+    this.url = url || defaultUrl
     this.timeout = options.timeout || 10000
     this.autoReconnect = options.autoReconnect !== false
     this.ws = null

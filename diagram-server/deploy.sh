@@ -23,7 +23,7 @@ SERVER_PORT=2333
 EDITOR_PORT=2233
 
 # 外部访问的 Host（用于生成 editorUrl）
-EXTERNAL_HOST="${EXTERNAL_HOST:-21.6.205.60}"
+EXTERNAL_HOST="${EXTERNAL_HOST:-your-domain.com}"
 
 # 编辑器入口的完整外部 URL
 EDITOR_BASE_URL="http://${EXTERNAL_HOST}/svgedit/src/editor/index.html"

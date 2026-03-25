@@ -241,20 +241,20 @@ const TOOLS = [
   },
   {
     name: 'editor_add_elements',
-    description: '批量向图表添加多个 SVG 元素（一次调用添加多个元素，比多次调用 editor_add_element 更高效）。需要编辑器在线。\n\n⚠️ 重要：不要使用此工具添加 text 文本元素！通过 children 传递的文字内容会丢失（已知 BUG）。\n添加文本的正确方式：先用此工具创建空的 text 元素（不传 children），再用 editor_set_text_content 逐个设置文字内容；或使用 editor_set_svg 直接注入包含文本的完整 SVG。',
+    description: '批量向图表添加多个 SVG 元素（一次调用添加多个元素，比多次调用 editor_add_element 更高效）。需要编辑器在线。\n\n✅ 添加文本元素示例：\n{\n  element: "text",\n  attrs: {x: 100, y: 100, "font-size": 16, fill: "#000"},\n  children: ["文本内容"]  // ✅ 字符串数组格式\n}\n\n❌ 错误用法：\nchildren: [{text: "文本"}]  // ❌ 对象格式会失败',
     inputSchema: {
       type: 'object',
       properties: {
         diagram_id: { type: 'string', description: '图表唯一标识符' },
         elements: {
           type: 'array',
-          description: '元素定义数组，每个元素包含 element(标签名)、attrs(属性)、children(子元素，可选)',
+          description: '元素定义数组，每个元素包含 element(标签名)、attrs(属性)、children(子元素，可选)。对于 text 元素，children 必须是字符串数组：["文本"]',
           items: {
             type: 'object',
             properties: {
               element: { type: 'string', description: 'SVG 元素标签名' },
               attrs: { type: 'object', description: '元素属性' },
-              children: { type: 'array', description: '子元素' }
+              children: { type: 'array', description: '子元素数组。对于 text 元素，使用字符串数组：["文本内容"]' }
             },
             required: ['element', 'attrs']
           }
@@ -999,7 +999,7 @@ const TOOLS = [
   // ----- 保存操作 -----
   {
     name: 'editor_save',
-    description: '将编辑器中当前画布的内容保存到后端存储。用于持久化编辑结果。需要编辑器在线。',
+    description: '将编辑器中当前画布的内容保存到后端存储，并返回 SVG 内容给调用者。用于持久化编辑结果并导出 SVG。需要编辑器在线。',
     inputSchema: {
       type: 'object',
       properties: {
@@ -2275,7 +2275,8 @@ async function main () {
                 success: true,
                 diagram_id: args.diagram_id,
                 updatedAt: saveResult.updatedAt,
-                message: '编辑器内容已保存到后端'
+                svgContent: svgResult,
+                message: '编辑器内容已保存到后端，并返回 SVG 内容'
               }, null, 2)
             }]
           }

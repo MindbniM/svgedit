@@ -29,7 +29,7 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 2233,
     strictPort: true,
-    allowedHosts: ['mindinlu.devcloud.woa.com']
+    allowedHosts: [process.env.VITE_HOST || 'localhost']
   },
   preview: {
     host: '0.0.0.0',

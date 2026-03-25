@@ -1,20 +1,45 @@
-ignore
-node_modules
-src/editor/react-extensions/react-test/node_modules
-docs/jsdoc
-cypress/results
-cypress/screenshots
-cypress/videos
-cypress.env.json
-# do not ignore the coverage summary so it can be used to compare master and PR coverage 
-# see .github/workflows/onpushandpullrequest.yml
-!coverage/
-coverage/*
-!coverage/coverage-summary.json
-instrumented
-.nyc_output
-.vscode
+# 依赖
+node_modules/
+package-lock.json
+
+# 环境变量
+.env
+.env.local
+.env.*.local
+
+# 构建输出
+dist/
+build/
+*.local
+
+# 日志
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
 .DS_Store
-.idea
-dist
-coverage/coverage-summary.json
+Thumbs.db
+
+# 测试覆盖率
+coverage/
+.nyc_output/
+
+# Diagram 数据
+diagram-server/diagrams/
+remote-bridge/output/
+
+# 临时文件
+tmp/
+temp/
+*.tmp
